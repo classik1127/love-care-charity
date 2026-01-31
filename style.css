@@ -1,0 +1,397 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: hsl(36, 100%, 90%) ;
+}
+
+nav{
+
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav ul{
+    align-items: flex-end;
+    justify-content: right;
+    display: flex;
+    background-color: hsla(36, 100%, 90%, 0.911);
+    gap: 30px;
+    padding: 15px;
+    padding-right: 80px;
+}
+nav a, nav li{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.display-section{
+    background-image: url(image/home\ page\ picd.jpg);
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.display-section-card{
+    background-color: transparent;
+    padding-top: 300px;
+    padding-left: 70px;
+}
+.display-section-card h4{
+    font-size:60px;
+    color: white;
+    font-style: italic;
+}
+.display-section-card p{
+    font-size:20px;
+    color: white;
+}
+.display-section-card button{
+    padding: 15px 25px ;
+    background-color: hsl(39, 100%, 50%);
+    color: white;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-left: 40px;
+    margin-top: 20px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    font-weight: 400;
+    font-size: 20px;
+}
+.display-section-card button:hover{
+    background-color: hsla(39, 100%, 50%, 0.705);
+}
+.donating{
+    height: 110vh;
+    background-color: hsl(36, 100%, 90%);
+    display: flex;
+    justify-content: space-between;
+}
+.donating-card1{
+    background-color: transparent;
+    width: 540px;
+    margin-left: 150px;
+}
+.donating-card1 h5{
+    margin-top: 100px;
+    color: rgba(184, 124, 13, 0.863);
+    font-size: 20px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.donating-card1 h2{
+    color: black;
+    font-size: 50px;
+    font-weight: 300;
+}
+.donating-card2{
+    background-color:  hsla(39, 85%, 8%, 0.863);
+    color:  white;
+    width: 350px;
+    margin-right: 150px;
+    padding: 45px;
+    text-align: left;
+}
+.donating-card2-heading{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.donating-card2-heading2{
+    margin-bottom: 15px;
+    color: white;
+    font-size: 35px;
+}
+#name, #amount, #causes{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color:  white;
+    margin-bottom: 35px;
+    margin-top: 13px;
+}
+.payment{
+    gap: 13px;
+    display: flex;
+    margin-bottom: 35px;
+}
+.donating-card2 button{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: hsl(39, 100%, 50%);
+    margin-bottom: 10px;
+    margin-top: 13px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.Statistics {
+    background-image: url(image/sStatistics2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 110vh;
+}
+.Statistics-container{
+    background-color: rgba(18, 82, 70, 0.664);
+    height: 110vh;
+    text-align: left;
+    padding-left: 100px;
+    padding-top: 159px;
+    color: white;
+}
+.Statistics-container-p1{
+    font-size: 21px;
+}
+.Statistics-container-h2{
+    font-size: 60px;
+    margin-top: 15px;
+}
+.Statistics-card{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding-right: 30px;
+}
+
+.statistics-card1{
+    text-align: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 60px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.158);
+    width: 200px;
+    padding: 15px;
+}
+.statistics-card1 h4{
+    font-size: 51px;
+}
+.statistics-card1 p{
+    font-size: 18px;
+}
+.causes-container{
+    display: flex;
+    justify-content: space-around;
+}
+.causes{
+    height: 165vh;
+    background-color: hsl(36, 100%, 90%);
+    padding: 20px;
+}
+.causes-heading{
+    padding-top: 70px;
+    padding-bottom: 65px;
+    text-align: center;
+    font-size: 45px;
+    font-family: cursive;
+}
+.causes-card{
+    width: 350px;
+    height: 110px;
+}
+.causes-card2{
+    background-color:  hsl(36, 80%, 90%);
+    height: 150px;
+    padding: 20px;
+}
+.causes-card2 h4{
+    font-size: 25px;
+}
+.causes-card2 p{
+    margin-top: 10px;
+    color: hsl(0, 0%, 46%);
+    font-size: 18px;
+}
+.causes-card3{
+    background-color:  hsl(39, 31%, 80%);
+    height: 80px;
+    padding: 20px;
+}
+.act{
+    background-image: url(image/intention\ act.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+.act-card{
+    padding: 85px;
+    background-color: rgba(0, 0, 0, 0.432);
+    height: 90vh;
+}
+.act p{
+    font-weight: 700;
+    font-size: 20px;
+
+}
+.act h3{
+    margin-top: 35px;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 83px !important;
+    margin-bottom: 30px;
+
+}
+.btn1{
+    padding: 20px 30px;
+    border: none;
+    background-color: hsl(39, 97%, 65%);
+    cursor: pointer;
+    border-radius: 50px;
+    color: white;
+    font-weight: 400;
+    font-size: 17px;
+    transition: all 0.2s ease-in-out;
+}
+.btn1:hover{
+    background-color: hsl(39, 98%, 53%);    
+}
+.btn2{
+    padding: 20px 30px;
+    border: none;
+    background-color: hsl(187, 90%, 21%);
+    cursor: pointer;
+    border-radius: 50px;
+    color: white;
+    transition: all 0.2s ease-in-out;
+    font-size: 17px;
+}
+.btn2:hover{
+    background-color: hsl(188, 87%, 15%);
+}
+
+
+
+
+.testimonial{
+    background-image: url(image/testimonial.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 110vh;
+}
+.testimonial-container{
+    background-color: rgba(18, 82, 70, 0.664);
+    height: 110vh;
+    text-align: center;
+}
+
+.testimonial-container-p{
+    padding-top: 70px;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+}
+.testimonial-container-h3{
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 58px;
+    margin-bottom: 95px;
+    color: white;
+}
+.testimonial-card{
+    display: flex;
+    gap: 30px;
+    align-self: center;
+    justify-content: center;
+}
+.testimonial-card1{
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    width: 300px;
+    height: 223px;
+    /* box-sizing: border-box; */
+    padding: 25px;
+}
+.testimonial-card1 p{
+    font-size: 18px;
+    text-align: left;
+    line-height: 27px;
+    margin-bottom: 12px;
+    color: rgb(121, 118, 118);
+}
+.testimonial-card1-child{
+    display: flex;
+    padding: 18px;
+    gap: 17px;
+}
+.testimonial-card1-child1, .testimonial-card1-child1 img{
+    border-radius: 50px;
+    width: 80px;
+}
+.testimonial-card1-2{
+    margin-top: 11px;
+    text-align: left;
+    line-height: 25px;
+}
+.testimonial-card1-2 h4{
+    color: #ffa500;
+    font-size: 23px;
+}
+
+
+
+
+
+footer{
+    height: 100vh;
+    background-color: hsl(180, 72%, 13%);
+    display: flex;
+    justify-content: center;
+    padding: 95px;
+}
+.footer-card{
+    width: 320px;
+    padding: 22px;
+}
+.footer-card h4{
+    font-size: 45px;
+    color: orange;
+}
+.footer-card-p1{
+    margin-top: 43px !important;
+    color: white;
+    line-height: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#material-symbols-outlined{
+    font-size: 75px;
+    margin-top: 10px;
+}
