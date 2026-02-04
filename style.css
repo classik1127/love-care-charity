@@ -71,7 +71,7 @@ nav a, nav li{
     font-size: 20px;
 }
 .display-section-card button:hover{
-    background-color: hsla(39, 100%, 50%, 0.705);
+    background-color: hsl(39, 93%, 59%);
 }
 .donating{
     height: 110vh;
@@ -92,8 +92,13 @@ nav a, nav li{
     font-size: 20px;
 }
 .donating-card1 h2{
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 50px;
+    font-weight: 300;
+}
+.donating-card1 h3{
+    color: rgba(0, 0, 0, 0.582);   
+    font-size: 20px;
     font-weight: 300;
 }
 .donating-card2{
@@ -193,7 +198,7 @@ nav a, nav li{
     justify-content: space-around;
 }
 .causes{
-    height: 165vh;
+    height: 135vh;
     background-color: hsl(36, 100%, 90%);
     padding: 20px;
 }
@@ -207,6 +212,9 @@ nav a, nav li{
 .causes-card{
     width: 350px;
     height: 110px;
+}
+.causes-card2:hover,.causes-card1:hover + .causes-card2,  .causes-card3:hover ~ .causes-card2{
+    background-color:   hsl(36, 19%, 74%);
 }
 .causes-card2{
     background-color:  hsl(36, 80%, 90%);
@@ -226,13 +234,21 @@ nav a, nav li{
     height: 80px;
     padding: 20px;
 }
+
+.act1{
+    height: 100vh;
+    background-color: green;
+} 
+
+
+
 .act{
     background-image: url(image/intention\ act.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    height: 90vh;
+    height: 100vh;
     color: white;
     align-items: center;
     text-align: center;
@@ -240,7 +256,7 @@ nav a, nav li{
 .act-card{
     padding: 85px;
     background-color: rgba(0, 0, 0, 0.432);
-    height: 90vh;
+    height: 100vh;
 }
 .act p{
     font-weight: 700;
@@ -359,18 +375,22 @@ nav a, nav li{
 
 
 footer{
-    height: 100vh;
+    height: 71vh;
     background-color: hsl(180, 72%, 13%);
     display: flex;
     justify-content: center;
     padding: 95px;
+    color: white;
 }
-.footer-card{
+.footer-card, .footer-card0{
     width: 320px;
     padding: 22px;
 }
 .footer-card h4{
     font-size: 45px;
+    color: white;
+}
+.footer-card span{
     color: orange;
 }
 .footer-card-p1{
@@ -378,11 +398,36 @@ footer{
     color: white;
     line-height: 28px;
 }
-
-
-
-
-
+.charity-theme{
+    color: white;
+}
+.Recent-Post{
+    margin-bottom: 54px;
+    font-size: 22x;
+}
+.footer-card-child{
+    display: flex;
+    gap: 31px;
+}
+.post-date{
+    color: rgb(226, 226, 226);
+    font-size: 13px;
+    margin-bottom: 14px;
+}
+.abt-post{
+    font-size: 20px;
+    font-weight: 200;
+}
+.footer-card-child1{
+    margin-bottom: 27px;
+}
+.footer-question{
+    margin-bottom: 54px;
+    font-size: 22x;
+}
+.footer-card0{
+    line-height: 37px;
+}
 
 
 
