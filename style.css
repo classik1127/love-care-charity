@@ -235,10 +235,20 @@ nav a, nav li{
     padding: 20px;
 }
 
-.act1{
-    height: 100vh;
-    background-color: green;
+.Volunteer{
+    height: 130vh;
+    background-color: transparent;
+    color: white;
 } 
+.Volunteer h5{
+    ma-top: 110px;
+    font-size: 16px;
+    margin-bottom: 36px;
+}
+.Volunteer h3{
+    font-size: 60px;
+    font-family:cursive ;
+}
 
 
 
