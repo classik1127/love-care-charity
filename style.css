@@ -33,6 +33,22 @@ nav a, nav li{
     font-size: 20px;
     font-style: italic;
 }
+.logo{
+    display: inline-block;
+    align-self: start;
+    text-align: left;
+    justify-content: left;
+    text-align: left;
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 3px;
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+}
+.logo-theme{
+    color: #ffa500;
+}
 
 .display-section{
     background-image: url(image/home\ page\ picd.jpg);
@@ -84,6 +100,26 @@ nav a, nav li{
     width: 540px;
     margin-left: 150px;
 }
+.fade-in{
+    animation: autoshow 2s ease forwards ;
+    /* animation-timeline: view(); */
+
+}
+@keyframes autoshow{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(3);
+    }to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+
+
+
+
 .donating-card1 h5{
     margin-top: 100px;
     color: rgba(184, 124, 13, 0.863);
@@ -236,7 +272,7 @@ nav a, nav li{
 }
 
 .Volunteer{
-    height: 170vh;
+    height: 139vh;
     background-color: hsl(39, 31%, 80%);
     color: white;
 } 
@@ -257,17 +293,54 @@ nav a, nav li{
 .volunteer-card{
     text-align: center;
     padding: 25px;
-    width: 300px;
+    width: 230px;
     background-color: white;
-    color: black;
+    /* color: black; */
     height: 400px;
+    border-radius: 15px;
+    transition: background-color ease-in-out 0.2s;
 }
 .volunteer-image{
-    width: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     padding-top: 20px;
     
 }
+.volunteer-name{
+    color: black;
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+.volunteer-title{
+    color: hsl(36, 85%, 61%);
+    margin-top: 9px;
+    font-size: 15px;
+}
+.volunteer-bio{
+    color: rgb(126, 125, 125);
+    margin-top: 15px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+.volunteer-card:hover{
+    background-color: darkcyan;
+}
+.volunteer-card:hover  .volunteer-bio{
+    color: white;
+}
+.volunteer-card:hover  .volunteer-name{
+    color: white;
+}
+.volunteer-card:hover  .volunteer-title{
+    color: white;
+}
+
+
+
+
+
 
 
 
@@ -427,9 +500,6 @@ footer{
     color: white;
     line-height: 28px;
 }
-.charity-theme{
-    color: white;
-}
 .Recent-Post{
     margin-bottom: 54px;
     font-size: 22x;
@@ -456,6 +526,11 @@ footer{
 }
 .footer-card0{
     line-height: 37px;
+}
+#footer-icon{
+    transform: translatey(2px);
+    color: white;
+    font-size: 15px;
 }
 
 
